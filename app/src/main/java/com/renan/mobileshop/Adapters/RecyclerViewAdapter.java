@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.renan.mobileshop.ClickRecyclerView;
-import com.renan.mobileshop.Product;
+import com.renan.mobileshop.Models.Product;
 import com.renan.mobileshop.R;
 import com.renan.mobileshop.ViewHolders.RecyclerViewHolder;
 

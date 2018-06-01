@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProductDetailActivity"></activity>
+        <activity android:name=".ProductDetailActivity" />
+        <activity android:name=".ProductCheckoutActivity" />
+        <activity android:name=".PaymentFinalizedActivity"></activity>
     </application>
 
 </manifest>

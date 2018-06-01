@@ -6,7 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.renan.mobileshop.ClickRecyclerView;
-import com.renan.mobileshop.Product;
+import com.renan.mobileshop.Models.Product;
 import com.renan.mobileshop.R;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.renan.mobileshop;
+package com.renan.mobileshop.Models;
 
 import java.io.Serializable;
 
