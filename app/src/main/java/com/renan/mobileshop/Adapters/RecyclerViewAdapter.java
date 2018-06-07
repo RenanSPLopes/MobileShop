@@ -12,6 +12,7 @@ import com.renan.mobileshop.Models.Product;
 import com.renan.mobileshop.R;
 import com.renan.mobileshop.ViewHolders.RecyclerViewHolder;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
@@ -19,6 +20,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder
     public static ClickRecyclerView clickRecyclerView;
     Context context;
     private List<Product> products;
+
 
     public RecyclerViewAdapter(Context context, List<Product> products, ClickRecyclerView clickRecyclerView){
         this.context = context;

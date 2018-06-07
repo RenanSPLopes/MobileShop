@@ -8,12 +8,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="276dp"
+        android:layout_width="272dp"
         android:layout_height="123dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ok_512" />
@@ -22,13 +23,15 @@
         android:id="@+id/textView"
         android:layout_width="285dp"
         android:layout_height="50dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="80dp"
         android:text="Pedido Confirmado! Em breve sua compra sairá para entrega"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </android.support.constraint.ConstraintLayout>

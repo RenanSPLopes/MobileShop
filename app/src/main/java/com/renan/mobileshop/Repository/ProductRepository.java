@@ -24,10 +24,28 @@ public class ProductRepository {
         product3.setPrice(2799.99);
         product3.setImageId(3);
 
+        Product product4 = new Product();
+        product4.setName("Smartphone Motorola Moto G6 Plus Dual Chip Android Oreo - 8.0 Tela 5.9\" Octa-Core 2.2 GHz 64GB 4G Câmera 12 + 5MP (Dual Traseira) - Índigo");
+        product4.setPrice(1699.99);
+        product4.setImageId(4);
+
+        Product product5 = new Product();
+        product5.setName("Smartphone Samsung Galaxy S9 - Preto + Smartphone Samsung Galaxy A8+ - Preto");
+        product5.setPrice(5498.49);
+        product5.setImageId(5);
+
+        Product product6 = new Product();
+        product6.setName("Smartphone Samsung Galaxy J7 Prime Dual Chip Android 6.0 Tela 5.5\" Octa- Core 1.6 GHz 32GB 4G Câmera 13MP - Rosa");
+        product6.setPrice(922.49);
+        product6.setImageId(6);
+
         List<Product> products = new ArrayList<>();
         products.add(product);
         products.add(product2);
         products.add(product3);
+        products.add(product4);
+        products.add(product5);
+        products.add(product6);
 
         return products;
     }

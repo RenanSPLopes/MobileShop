@@ -24,21 +24,12 @@ public class RecyclerViewHolder extends RecyclerView.ViewHolder{
         price = itemView.findViewById(R.id.product_price);
         image =  itemView.findViewById(R.id.product_image);
 
-        itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                clickRecyclerView.onCustomClick(products.get(getLayoutPosition()));
-            }
-        });
+        itemView.setOnClickListener(v -> clickRecyclerView.onCustomClick(products.get(getLayoutPosition())));
 
     }
 
     public void setClickRecyclerView(ClickRecyclerView clickRecyclerView) {
         this.clickRecyclerView = clickRecyclerView;
-    }
-
-    public TextView getPrice() {
-        return price;
     }
 
     public void setPrice(String price) {
