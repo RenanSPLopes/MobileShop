@@ -8,13 +8,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="272dp"
+        android:layout_width="252dp"
         android:layout_height="123dp"
         android:layout_marginEnd="44dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.187"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ok_512" />
