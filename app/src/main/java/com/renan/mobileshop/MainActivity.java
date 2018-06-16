@@ -8,25 +8,24 @@ import android.support.v7.widget.RecyclerView;
 
 import com.renan.mobileshop.Adapters.RecyclerViewAdapter;
 import com.renan.mobileshop.Models.Product;
-import com.renan.mobileshop.Repository.ProductRepository;
+import com.renan.mobileshop.Persistency.ProductDAO;
+import com.renan.mobileshop.Persistency.ProductDAOFactory;
+
 
 public class MainActivity extends AppCompatActivity implements ClickRecyclerView {
 
-    public static final String EXTRA_MESSAGE = "com.renan.mobileshop.MESSAGE";
-
-    private ProductRepository productRepository;
+    private ProductDAO dao;
     private RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
     private RecyclerViewAdapter recyclerViewAdapter;
-
-    public MainActivity(){
-        this.productRepository = new ProductRepository();
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ProductDAOFactory factory = new ProductDAOFactory();
+        dao = factory.Create(this);
 
         setupRecyclerView();
     }
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements ClickRecyclerView
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        recyclerViewAdapter = new RecyclerViewAdapter(this, productRepository.getProducts(), this);
+        recyclerViewAdapter = new RecyclerViewAdapter(this, dao.getAll(), this);
         recyclerView.setAdapter(recyclerViewAdapter);
         recyclerView.addItemDecoration(
                 new android.support.v7.widget.DividerItemDecoration

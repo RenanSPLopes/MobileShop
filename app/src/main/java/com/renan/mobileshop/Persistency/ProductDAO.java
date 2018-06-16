@@ -1,13 +1,25 @@
-package com.renan.mobileshop.Repository;
+package com.renan.mobileshop.Persistency;
+
+import android.arch.persistence.room.Dao;
+import android.arch.persistence.room.Insert;
+import android.arch.persistence.room.Query;
 
 import com.renan.mobileshop.Models.Product;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductRepository {
+@Dao
+public interface ProductDAO {
 
-    public List<Product> getProducts(){
+    @Query("SELECT * FROM products")
+    List<Product> getAll();
+
+    @Insert
+    void insert(Product product);
+
+
+   /* public List<Product> getProducts(){
 
         Product product = new Product();
         product.setName("Iphone 7 Jet Black 32GB Preto Iphone IOS 4G Wi-fi Câmera 12MP");
@@ -48,5 +60,5 @@ public class ProductRepository {
         products.add(product6);
 
         return products;
-    }
+    }*/
 }

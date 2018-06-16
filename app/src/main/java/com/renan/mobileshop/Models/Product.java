@@ -1,12 +1,19 @@
 package com.renan.mobileshop.Models;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+
 import java.io.Serializable;
 
+@Entity(tableName = "products")
 public class Product implements Serializable {
+
+    @PrimaryKey
+    private int imageId;
 
     private String name;
     private double price;
-    private int imageId;
+
 
     public String getName() {
         return name;
